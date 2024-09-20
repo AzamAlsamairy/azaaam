@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>سيرتي الذاتية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .resume-content {
+            display: none; /* إخفاء المحتوى في البداية */
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+        .resume-content.show {
+            display: block;
+        }
+        header h1 {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        section h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+        section p, section ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>عزام عبدالله عبدالجبار</h1>
+        <p>مسمى الوظيفة</p>
+        <img src="profile-picture.jpg" alt="صورة شخصية" style="width: 150px; height: 150px; border-radius: 50%;">
+    </header>
+    
+    <section>
+        <h2 class="toggle-button" onclick="toggleResume()">السيرة الذاتية</h2>
+        <div class="resume-content" id="resumeContent">
+            <h3>بيانات الاتصال</h3>
+            <p>الهاتف: ٧٧٤٣٠٥١٢٩</p>
+            <p>البريد الإلكتروني: <a href="mailto:azamalsamairy@gmail.com">azamalsamairy@gmail.com</a></p>
+            <h3>نبذة عني</h3>
+            <p>أنا عزام عبدالله الشميري، خريج بكالوريوس محاسبة من كلية العلوم الإدارية جامعة تعز. أتمتع بفطنة عالية وقدرة استثنائية على التعلم والإقناع. على الرغم من كوني حديث التخرج، إلا أنني أمتلك شغفًا كبيرًا بالمجال المالي والمحاسبي، وأطمح لتطبيق معرفتي الأكاديمية في بيئة عمل احترافية تتيح التميز.</p>
+            <h3>المهارات</h3>
+            <ul>
+                <li>مهارة 1</li>
+                <li>مهارة 2</li>
+            </ul>
+            <h3>التعليم</h3>
+            <p>تفاصيل التعليم الخاص بك.</p>
+            <h3>التجارب العملية</h3>
+            <p>تفاصيل التجارب العملية الخاصة بك.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleResume() {
+            var content = document.getElementById("resumeContent");
+            content.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
