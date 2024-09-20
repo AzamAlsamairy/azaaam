@@ -10,23 +10,39 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
         }
         .resume-content {
             display: none; /* إخفاء المحتوى في البداية */
-            margin-top: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             transition: all 0.3s ease-in-out;
         }
         .toggle-button {
             cursor: pointer;
             color: blue;
             text-decoration: underline;
+            text-align: center;
+            display: block;
+            margin-top: 20px;
         }
         .resume-content.show {
             display: block;
-        }
-        header h1 {
-            font-weight: bold;
-            font-size: 24px;
         }
         section h3 {
             margin-top: 20px;
@@ -41,7 +57,7 @@
     <header>
         <h1>عزام عبدالله عبدالجبار</h1>
         <p>مسمى الوظيفة</p>
-        <img src="profile-picture.jpg" alt="صورة شخصية" style="width: 150px; height: 150px; border-radius: 50%;">
+        <img src="profile-picture.jpg" alt="صورة شخصية">
     </header>
     
     <section>
